@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from  './Home';
 
 import {
 	  BrowserRouter as Router,
@@ -14,7 +13,7 @@ function App() {
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <div>FALAE QUE ESSA AQUI EH A HOME</div>
+                    <Home/>
                 </Route>
                 <Route exact path="/about">
                     <div>SOBRE NOIS !</div>
