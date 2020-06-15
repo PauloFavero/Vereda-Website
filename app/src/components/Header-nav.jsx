@@ -1,12 +1,20 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Switch, Route, Link } from 'react-router-dom';
 import logoVereda from '../assets/logo.png'
 import logoV from '../assets/v_logo.png'
+import background from '../assets/header-background.png'
 
+// https://stackoverflow.com/questions/61314053/react-bootstrap-custom-nav-link-active-style-is-not-working
+
+var backgroundImage = {
+    backgroundImage: `url(${background})`
+ }
+ 
 export default function Header() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
             <Navbar.Brand href="#home">
                 <img
                     alt=""
