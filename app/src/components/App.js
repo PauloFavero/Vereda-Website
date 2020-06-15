@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from  './Home';
-
+import Footer from './Footer';
 import {
 	  BrowserRouter as Router,
 		  Switch,
@@ -19,6 +19,10 @@ function App() {
                     <div>SOBRE NOIS !</div>
                 </Route>
             </Switch>
+        
+            <Route path="/">
+                <Footer/>
+            </Route>
         </Router>
     );
 }
