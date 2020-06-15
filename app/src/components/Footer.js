@@ -2,7 +2,7 @@ import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 export default function Footer() {
     return (
-        <div style={{backgroundColor:'#e4482e', bottom:'0px', position:'relative', height:'70px'}}>
+        <div style={{backgroundColor:'#e4482e', bottom:'0px', position:'absolute', width: '100%', height:'100px'}}>
             {/* <Row>
                 <Col sm={1} style={{backgroundColor:'black'}}>af
                 </Col>
@@ -33,7 +33,8 @@ export default function Footer() {
                 <Col sm={1} style={{backgroundColor:'red'}}>
                 f
                 </Col>
-            </Row> */}
+            </Row> */
+            }
                 Footer Infos
         </div>
     );

@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
-// import {lo}
+import logoVereda from '../assets/logo.png'
+import logoV from '../assets/v_logo.png'
 
 export default function Header() {
     return (
@@ -9,12 +10,11 @@ export default function Header() {
             <Navbar.Brand href="#home">
                 <img
                     alt=""
-                    src="/logo.svg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                />{' '}
-      Vereda Acabamentos
+                    src={logoVereda}
+                    width="200"
+                    height="80"
+                    className="d-inline-block align-center"
+                />{''}
     </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
