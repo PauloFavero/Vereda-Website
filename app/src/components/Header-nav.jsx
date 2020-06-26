@@ -1,21 +1,18 @@
 import React, { Fragment } from 'react'
-import ReactDOM from 'react-dom'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
-import { Switch, Route, Link } from 'react-router-dom';
 import logoVereda from '../assets/logo.png'
-import logoV from '../assets/v_logo.png'
 import background from '../assets/header-background.png'
 
 // https://stackoverflow.com/questions/61314053/react-bootstrap-custom-nav-link-active-style-is-not-working
 
 var backgroundImage = {
     backgroundImage: `url(${background})`
- }
- 
+}
+
 export default function Header() {
     return (
         <Navbar expand="lg">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <img
                     alt=""
                     src={logoVereda}
@@ -23,26 +20,26 @@ export default function Header() {
                     height="80"
                     className="d-inline-block align-center"
                 />{''}
-    </Navbar.Brand>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Inicio</Nav.Link>
-                    <Nav.Link href="#link">Empresa</Nav.Link>
+                    <Nav.Link href="/">Inicio</Nav.Link>
+                    <Nav.Link href="/empresa">Empresa</Nav.Link>
                     <NavDropdown title="Serviços" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Colocação de Wire</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Colocação de espiral com wire e pendente</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Colocação de espirais plásticos e metálicos</NavDropdown.Item>
+                        <NavDropdown.Item href="/servicos/wire">Colocação de Wire</NavDropdown.Item>
+                        <NavDropdown.Item href="/servicos/pendentes">Colocação de espiral com wire e pendente</NavDropdown.Item>
+                        <NavDropdown.Item href="/servicos/espirais">Colocação de espirais plásticos e metálicos</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Empastamento</NavDropdown.Item>
+                        <NavDropdown.Item href="/servicos/empastamento">Empastamento</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Produtos" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/4.1">Wire</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/4.2">Pendentes</NavDropdown.Item>
+                        <NavDropdown.Item href="produtos/wire">Wire</NavDropdown.Item>
+                        <NavDropdown.Item href="produtos/pendentes">Pendentes</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#home">Clientes</Nav.Link>
-                    <Nav.Link href="#link">Blog</Nav.Link>
-                    <Nav.Link href="#home">Contato</Nav.Link>
+                    <Nav.Link href="/clientes">Clientes</Nav.Link>
+                    {/* <Nav.Link href="#link">Blog</Nav.Link> */}
+                    <Nav.Link href="contato">Contato</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>)
