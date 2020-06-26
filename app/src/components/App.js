@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import Footer from './Footer';
 import Header from './Header-nav';
+import CarouselDisplay from './Inicio'
 import {
     BrowserRouter as Router,
     Switch,
@@ -17,7 +18,8 @@ function App() {
             </Route>
             <Switch>
                 <Route exact path="/">
-                    <Home />
+                    {/* <Home /> */}
+                    <CarouselDisplay />
                 </Route>
                 <Route exact path="/about">
                     <div>SOBRE NOIS !</div>
