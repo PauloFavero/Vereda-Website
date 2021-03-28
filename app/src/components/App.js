@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './Home';
-import Footer from './Footer';
-import Header from './Header-nav';
-import CarouselDisplay from './Inicio'
+import Footer from './Footer/Footer';
+import Header from './Header/Header-nav';
+import CarouselDisplay from './Carousel/ImageCarousel'
 import {
     BrowserRouter as Router,
     Switch,
@@ -19,6 +19,8 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     {/* <Home /> */}
+                    <CarouselDisplay />
+                    <CarouselDisplay />
                     <CarouselDisplay />
                 </Route>
                 <Route exact path="/about">

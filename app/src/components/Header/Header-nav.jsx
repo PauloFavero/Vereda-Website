@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
-import logoVereda from '../assets/logo.png'
-import background from '../assets/header-background.png'
+import logoVereda from '../../assets/logo.png'
+import background from '../../assets/header-background.png'
 
 // https://stackoverflow.com/questions/61314053/react-bootstrap-custom-nav-link-active-style-is-not-working
 
@@ -39,7 +39,7 @@ export default function Header() {
                     </NavDropdown>
                     <Nav.Link href="/clientes">Clientes</Nav.Link>
                     {/* <Nav.Link href="#link">Blog</Nav.Link> */}
-                    <Nav.Link href="contato">Contato</Nav.Link>
+                    <Nav.Link href="/contato">Contato</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>)
