@@ -11,14 +11,15 @@ var backgroundImage = {
 
 export default function Header() {
     return (
-        <Navbar expand="lg">
-            <Navbar.Brand href="/">
+        <Navbar expand="lg" style={{height: "85px"}}>
+            <Navbar.Brand href="/" style={{paddingTop: "35px"}}>
                 <img
                     alt=""
                     src={logoVereda}
                     width="200"
                     height="80"
                     className="d-inline-block align-center"
+                    style = {{top:10}}
                 />{''}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

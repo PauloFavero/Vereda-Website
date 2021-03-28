@@ -6,7 +6,7 @@ import img_1 from '../../assets/produto1.jpg'
 import img_2 from '../../assets/produto2.jpg'
 import img_3 from '../../assets/produto3.jpg'
 import img_4 from '../../assets/produto4.jpg'
-// import './Car'
+// import styles from './CarouselStyle'
 
 export default function CarouselDisplay() {
     return (

@@ -2,7 +2,8 @@ import React from 'react';
 import Home from './Home';
 import Footer from './Footer/Footer';
 import Header from './Header/Header-nav';
-import CarouselDisplay from './Carousel/ImageCarousel'
+import CarouselDisplay from './Carousel/ImageCarousel';
+import Clients from './Clients/Clients'
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,6 +12,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+    console.log("Window Orientation: ", window.orientation)
     return (
         <Router>
             <Route path="/">
@@ -20,11 +22,10 @@ function App() {
                 <Route exact path="/">
                     {/* <Home /> */}
                     <CarouselDisplay />
-                    <CarouselDisplay />
-                    <CarouselDisplay />
+                    <Clients/>
                 </Route>
                 <Route exact path="/about">
-                    <div>SOBRE NOIS !</div>
+                    <div>Sobre Nós !</div>
                 </Route>
             </Switch>
             <Route path="/">
