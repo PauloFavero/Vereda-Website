@@ -5,6 +5,11 @@
 $base-orange: #F89C29;
 $base-brown: #9B4127;
 
+$theme-colors: (
+  "base-orange": #F89C29,
+  "base-brown": $base-brown
+);
+
 .navbar {
     background-color: #f5f5f5;
     color: white;
@@ -19,4 +24,8 @@ $base-brown: #9B4127;
 
 .navbar-light .navbar-nav .nav-link:hover { 
   color: $base-orange !important; 
+}
+
+.base-orange-text{
+  color: $base-orange;
 }
